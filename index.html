@@ -1,0 +1,257 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Charisma Fragrances</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+
+    
+  <style>
+    html, body {
+        height: 100%;
+        margin: 0;
+        font-family: 'Inter', sans-serif;
+        color: white;
+    }
+    body{
+        background-image: 
+        linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+        url('https://images.pexels.com/photos/15074006/pexels-photo-15074006.jpeg');
+        background-size: cover;
+        background-position: center;   
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+    }
+
+    header {
+        margin: 10px auto;
+        text-align: center;
+        padding: 10px 20px;
+        font-weight: 400;
+        font-style: normal;
+        color: #D4AF37;
+        font-size: 2.5em;
+    }
+
+    .nav-links {
+        background-color: grey;
+        padding: 10px 0;
+        background: rgba(0, 0, 0, 0.1);
+        display:flex;
+        justify-content: center; 
+        gap: 50px;
+        margin-top: 20px;
+    }
+    .nav-links a {
+        color: #D4AF37;
+        text-decoration: none;
+        font-size: 1.2em;
+        font-weight: 600;
+        transition: color 0.3s ease;
+    }
+
+   .hero{
+    text-align: center;
+    margin:60px auto 40px;
+    padding: 20px;
+    max-width: 800px;    
+}
+
+    .hero h2{
+        font-family: "Playfair Display", serif;
+        font-size: clamp(28px, 4.8vw, 48px);
+        margin: 0 0 8px;
+        color:#fff;
+    }
+
+    .hero .sub{
+        margin: 0 0 18px;
+    }
+
+    .btn{
+    display:inline-block;
+    padding:10px 18px;
+    border-radius:999px;
+    background:#D4AF37;          /* gold */
+    color:#121212;
+    text-decoration:none;
+    font-weight:700;
+    transition:transform .3s ease , opacity .3s ease ;
+    }
+.btn:hover{ transform:translateY(-1px); opacity:.95; }
+
+    .product-section {
+        text-align: center;
+        margin: 60px auto;
+        padding: 20px;
+        max-width: 1100px;
+    }   
+
+    .product-section h2 {
+        font-family: "Playfair Display", serif;
+        font-size: 2em;
+        margin-bottom: 30px;
+        color: #D4AF37;
+    }
+
+    .product-container {
+        display: flex;
+        justify-content: space-between;
+        gap: 30px;
+        flex-wrap: wrap;
+    }
+
+    .product-card{
+        background : rgba(255,255,255,0.05);
+        padding:20px;
+        border-radius:12px;
+        text-align:center;
+        width: 250px;
+        transition: transform 0.3s ease;
+    }
+    .product-card:hover {
+        transform: translateY(-5px);
+    }
+    .product-card img {
+        max-width: 100%;
+        border-radius: 8px;
+        margin-bottom:15px;
+    }
+    .product-card h3 {
+  margin: 0;
+  font-size: 1.2em;
+}
+.product-card p {
+  margin: 5px 0 0;
+  color: #D4AF37;
+  font-weight: bold;
+}
+
+#about{
+   background: rgba(0,0,0,0.5);
+   padding: 40px 20px;
+   text-align: center;
+}
+
+.about{
+  display: grid;
+  place-items: center;
+  padding: 70px 20px;
+}
+
+.about__inner{
+  max-width: 900px;
+  padding: 28px 24px;
+  border-radius: 14px;
+
+  /* glass panel so text pops on the concrete */
+  background: rgba(0,0,0,0.35);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+  border: 1px solid rgba(255,255,255,0.08);
+  box-shadow: 0 8px 24px -6px rgba(0,0,0,0.35);
+  text-align: center;
+}
+
+.about h2{
+  font-family: "Playfair Display", serif;
+  font-size: 2em;
+  margin: 0 0 10px;
+  color: #D4AF37; /* gold accent */
+}
+
+.about p{
+  margin: 10px 0 0;
+  line-height: 1.7;
+}
+
+.muted{ opacity: .9; }
+
+
+html { scroll-behavior: smooth; }
+
+  </style>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Monsieur+La+Doulaise&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <header>
+        <h1 style="font-family: 'Monsieur La Doulaise', cursive;">Charisma</h1>
+    </header>
+        
+  <nav class="nav-links">
+  <a href="#men">Men</a>
+  <a href="#women">Women</a>
+  <a href="#about">About Us</a>
+</nav>
+
+<section class="hero">
+  <h2>Craft your presence.</h2>
+  <p class="sub">Long-lasting, modern fragrances for day and night.</p>
+  <a class="btn" href="#men">Shop Men</a>
+</section>
+
+<section id="men" class="product-section">
+  <h2>Men's Collection</h2>
+  <div class="product-container">
+    <div class="product-card">
+      <img src="/images/black cologne.png " alt="Cologne 1">
+      <h3>Icon 2</h3>
+      <p>$600</p>
+    </div>
+    <div class="product-card">
+      <img src = "/images/ChatGPT Image Aug 12, 2025, 12_53_58 PM.png" alt="Cologne 2">
+      <h3>Amber</h3>
+      <p>$600</p>
+    </div>
+    <div class="product-card">
+      <img src="/images/ChatGPT Image Aug 12, 2025, 12_48_02 PM.png" alt="Cologne 3">
+      <h3>Midnight</h3>
+      <p>$600</p>
+    </div>
+  </div>
+</section>
+
+<section id="women" class="product-section">
+  <h2>Women’s Collection</h2>
+  <div class="product-container"> 
+    <div class="product-card">
+      <img src="/images/women4.png" alt="Rosé Lumière">
+      <h3>Rosé Lumière</h3>
+      <p>$600</p>
+    </div>
+    <div class="product-card">
+      <img src="/images/women1.png" alt="Velvet Bloom">
+      <h3>Velvet Bloom</h3>
+      <p>$600</p>
+    </div>
+    <div class="product-card">
+      <img src="/images/women2.png" alt="Golden Hour">
+      <h3>Golden Hour</h3>
+      <p>$600</p>
+    </div>
+  </div>
+</section>
+
+    <section id="about" class="about">
+  <div class="about__inner">
+    <h2>About Us</h2>
+    <p>
+      Charisma crafts long-lasting, modern fragrances designed to turn heads
+      without shouting. We blend premium oils with clean formulations for
+      signature scents that feel luxe day or night.
+    </p>
+    <p class="muted">
+      Hand-poured. Small batch. Made for presence.
+    </p>
+  </div>
+</section>
+
+    
+</body>
+</html>
